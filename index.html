@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Have Been PHISHED!</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+    }
+    .card {
+      max-width: 640px;
+      padding: 40px;
+      border: 4px solid #e53935;
+      border-radius: 12px;
+      background: #2a2a2a;
+    }
+    .icon { font-size: 80px; }
+    h1 {
+      color: #e53935;
+      font-size: 3rem;
+      margin: 10px 0;
+      animation: pulse 1.2s infinite;
+    }
+    @keyframes pulse { 50% { opacity: 0.5; } }
+    ul { text-align: left; line-height: 1.8; }
+    .note { color: #aaa; font-size: 0.9rem; margin-top: 24px; }
+    @media (max-width: 600px) {
+      .card { margin: 16px; padding: 24px 18px; }
+      h1 { font-size: 2rem; }
+      .icon { font-size: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎣</div>
+    <h1>You Have Been PHISHED!</h1>
+    <p>This was a <strong>simulated QR code phishing ("quishing") exercise</strong> for Cybersecurity Awareness Week. No harm done, but a malicious QR code could have taken you to a fake login page or downloaded malware to your phone.</p>
+    <h3>Next time, watch for:</h3>
+    <ul>
+      <li>QR codes from unknown sources, such as random posters, flyers or stickers placed over existing codes</li>
+      <li>QR codes that promise prizes or rewards, or create a sense of urgency</li>
+    </ul>
+    <h3>What you could have done:</h3>
+    <ul>
+      <li>Check the URL preview your camera shows before opening the link, and only continue if it's a trusted, official domain</li>
+      <li>Report suspicious QR codes to the security team instead of scanning them</li>
+    </ul>
+    <p>When in doubt, <strong>don't scan</strong>. Never enter your credentials on a page you reached through a QR code.</p>
+    <p class="note">No information was collected on this page.</p>
+  </div>
+</body>
+</html>
